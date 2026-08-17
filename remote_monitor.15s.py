@@ -74,8 +74,8 @@ print(f"-- Stop | bash='ssh {REMOTE_USER}@{REMOTE_HOST} \"docker stop triton\"' 
 print(f"-- Restart | bash='ssh {REMOTE_USER}@{REMOTE_HOST} \"docker restart triton\"' terminal=false")
 
 print(f"ml-triton: {m_state} {m_log}")
-print(f"-- Up | bash='ssh {REMOTE_USER}@{REMOTE_HOST} \"docker-compose -f {COMPOSE_PATH} up --build -d\"' terminal=false")
-print(f"-- Build | bash='ssh {REMOTE_USER}@{REMOTE_HOST} \"docker-compose -f {COMPOSE_PATH} up -d\"' terminal=false")
+print(f"-- Up | bash='ssh {REMOTE_USER}@{REMOTE_HOST} \"docker-compose -f {COMPOSE_PATH} up -d \"' terminal=false")
+print(f"-- Build | bash='ssh {REMOTE_USER}@{REMOTE_HOST} \"docker-compose -f {COMPOSE_PATH} up --build -d\"' terminal=false")
 print(f"-- Stop | bash='ssh {REMOTE_USER}@{REMOTE_HOST} \"docker stop ml_triton\"' terminal=false")
 
 print(f"converter")
